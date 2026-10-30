@@ -183,10 +183,51 @@ footer .container{gap:6px}
 .brand-logo img{display:block;width:100%;height:auto}
 @media(max-width:800px){.brand-logo{width:48px}}
 @media(max-width:360px){.brand-logo{width:42px}.brand{gap:8px}}
+
+/* Approved design 06: clinic identity. */
+header{border-top:5px solid var(--blue)}
+nav{min-height:66px;gap:24px}
+.container{width:min(1120px,92%)}
+.clinic-nav{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:650;color:var(--blue)}
+.clinic-nav a{display:flex;align-items:center;min-height:44px}
+.clinic-nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.hero{background:#f5fafc}
+.hero-grid{gap:30px}
+.doctor-details{padding:24px 0}
+.doctor-details h1{background:none;color:var(--blue);padding:0;font-size:40px}
+.portrait-panel{max-width:350px;justify-self:center}
+.portrait-caption{padding:8px}
+.portrait-caption strong{font-size:19px}
+.quick{background:var(--blue);color:white;border:0;box-shadow:none}
+.quick>div{padding:10px 16px}
+.quick>div+div{border-color:#ffffff33}
+.quick .label{color:#c6e8f0}
+.quick strong{color:white}
+section{padding:28px 0}
+h2{font-size:28px}
+.specialties{background:white}
+.card{border-top:3px solid var(--cyan);padding:12px 16px}
+.schedule{padding:20px}
+.schedule .time{font-size:26px}
+.contact{background:var(--dark);padding:24px 0}
+@media(max-width:800px){
+.container{width:calc(100% - 32px)}
+nav{gap:8px;padding:10px 0}
+.clinic-nav{width:100%;justify-content:space-between;gap:12px;border-top:1px solid #e1ecf0;padding-top:4px;font-size:13px}
+.clinic-nav a{min-height:40px}
+section{padding:26px 0}
+}
+@media(max-width:760px){
+.hero-grid{gap:0}
+.doctor-details{display:contents}
+.doctor-details h1{font-size:36px}
+.portrait-panel{max-width:350px}
+}
+@media(max-width:360px){.doctor-details h1{font-size:32px}}
 </style>
 </head>
 <body>
-<header><nav class="container" aria-label="প্রধান নেভিগেশন"><a class="brand" href="#home"><span class="brand-logo"><img src="assets/icon.png" alt="" width="307" height="194"></span><span>নিউরন ডায়াগনস্টিক সেন্টার<small>NEURON DIAGNOSTIC CENTER</small></span></a></nav></header>
+<header><nav class="container" aria-label="প্রধান নেভিগেশন"><a class="brand" href="#home"><span class="brand-logo"><img src="assets/icon.png" alt="" width="307" height="194"></span><span>নিউরন ডায়াগনস্টিক সেন্টার<small>NEURON DIAGNOSTIC CENTER</small></span></a><div class="clinic-nav"><a href="#services">চিকিৎসা</a><a href="#visit">সময় ও ঠিকানা</a><a href="#contact">যোগাযোগ</a></div></nav></header>
 <main>
 <div class="hero" id="home"><div class="container hero-grid"><div class="doctor-details"><h1>ডা. আব্দুর রহিম</h1><div class="doctor-qualifications"><p>এমবিবিএস, বিসিএস (স্বাস্থ্য)<br>এমডি (ক্রিটিক্যাল কেয়ার মেডিসিন)<br>এফসিপিএস, ফাইনাল পার্ট ট্রেইনি (মেডিসিন)</p><p class="university">বাংলাদেশ মেডিকেল বিশ্ববিদ্যালয়<br>বিএমডিসি রেজি: ৯৩৯০৮</p></div><p class="lead">মেডিসিন, ডায়াবেটিস, বক্ষব্যাধি, হাই প্রেসার, বাত-ব্যথা, হার্ট, স্নায়ু ও মাইনর সার্জারি বিষয়ে অভিজ্ঞ।</p><div class="poster-schedule"><h2>রোগী দেখার সময়</h2><p class="visiting-days">বৃহস্পতিবার, শুক্রবার ও শনিবার</p><p class="visiting-time">বিকাল ৪টা থেকে রাত ৮টা</p><p class="chamber-location">সোনালী মার্কেট, (২য় তলা), পুরাতন সোনালী ব্যাংক<br>রামগড়, খাগড়াছড়ি।</p></div><div class="actions"><a class="btn" href="tel:01794205221">ফোনে সিরিয়াল নিন ↗</a><a class="btn secondary" href="#visit">চেম্বারের ঠিকানা</a></div></div><div class="portrait-panel"><div class="portrait-accent" aria-hidden="true"></div><img src="assets/doctor-portrait.webp" alt="ডা. আব্দুর রহিম" width="1312" height="1200" fetchpriority="high"><div class="portrait-caption"><span>আপনার সুস্থতাই আমাদের অঙ্গীকার</span><strong>ডা. আব্দুর রহিম</strong></div></div></div></div>
 <div class="container quick"><div><span class="label">রোগী দেখার দিন</span><strong>বৃহস্পতিবার, শুক্রবার ও শনিবার</strong></div><div><span class="label">চেম্বারের সময়</span><strong>বিকাল ৪টা থেকে রাত ৮টা</strong></div><div><span class="label">চেম্বার</span><strong>নিউরন ডায়াগনস্টিক সেন্টার</strong></div></div>
